@@ -1,7 +1,7 @@
 /* INICIO */
 #inicio {
     width: 80%;
-    height: 360vh;
+    height: 250vh;
     margin-right: 10%;
     margin-left: 10%;
     border-radius: 10px;
@@ -1301,7 +1301,7 @@
 
     /* IMG DO PERFIL */
     .img_perfil img {
-        width: 43vw;
+        width: 47vw;
         object-fit: cover;
         background-repeat: no-repeat;
         background-size: cover;
