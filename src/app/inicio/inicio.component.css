@@ -537,16 +537,10 @@
     box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.26);
     z-index: 2;
     padding: 1rem;
-    /* opacity: 0; */
-    /* transform: translateY(70px);
-    transition: opacity 1s ease-out, transform 1s ease-out; */
+
 }
 
-/* #especializacao.show{
-    opacity: 1;
-    filter: blur(brightness);
-    transform: translateY(0);
-} */
+
 
 /* texto_especializacao */
 .texto_especializacao {
@@ -1150,8 +1144,8 @@
 
 
 
-/* ________________MIDIA SCREN 768PX___________________ */
-@media screen and (max-width:768px){
+/* ________________MIDIA SCREN 800PX___________________ */
+@media screen and (max-width:800px){
      /* INICIO */
      #inicio {
         width: 90%;
