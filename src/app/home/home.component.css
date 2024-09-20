@@ -196,7 +196,7 @@
 
 
 /* some como btn menu quando a tela chega a 1400px */
-@media screen and (max-width:1400px) {
+@media screen and (max-width:1900px) {
     #vamos_conversar button:nth-child(3) {
         display: none;
     }
@@ -204,7 +204,14 @@
         display: none; 
     }
 }
-
+@media screen and (min-width:1000px) {
+    #vamos_conversar button:nth-child(3) {
+        display: none;
+    }
+    #menu{
+        display: none; 
+    }
+}
 
 
 
@@ -386,7 +393,6 @@
         align-items: center;
         justify-content: space-around;
         flex-direction: column;
-        gap: 0.3vw;
         width: 30%;
         height: 100%;
         background-color: inherit;
@@ -397,7 +403,6 @@
         font-family: VariableFont_wght;
         font-size: 2vw;
         font-weight: 600;
-
     }
 
     
@@ -409,11 +414,10 @@
     #linha_1,
     #linha_2,
     #linha_3 {
-        width: 100%;
+        width:80%;
         height: 1vw;
-        background-color: #000000;
+        background-color: var(--bs-gray-600);
         border-radius: 2px;
-        transition: transform 0.3s, opacity 0.3s;
     }
 
     .cross #linha_1 {
@@ -430,14 +434,20 @@
         transform: rotate(-43deg) translate(0.5vw, -0.5vw);
         margin-bottom: 2vh;
     }
+
+
+
+
+
 /* menu device */
 #menu {
     position: fixed;
-    width: 50vw;
+    width: 60vw;
     margin-left: -5vw;
-    height: 100vh;
+    height: 110vh;
     left: -100%; 
     top: -10vh;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -447,18 +457,20 @@
     z-index: 100;
     margin-top: 8vh;
     box-shadow: 1px 1px 1rem black;
-    background-color: var(--bs-white);
+    background-color: var(--bs-gray-200);
 }
 
 #menu.show {
     left: 0; /* Quando o menu for ativado, ele se move para a posição 0 */
 }
 
+
+
 /* menu_device_ul */
 #menu_device_ul{
-    border: 1px solid red;
     width: 50%;
     height: 60vh;
+    padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -526,7 +538,7 @@
 }
 
 #menu ul li a:hover{
-    background-color: var(--bs-gray-200);
+    background-color: var(--bs-gray-500);
 }
      
 #menu ul li a:hover .bi{

@@ -398,3 +398,214 @@
 .emoji {
     margin-left: 5vw;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------MIDIAS SCREENS ---------------------------- */
+@media screen and (max-width:480px) {
+/* PORIFOLIO  */
+
+#portfolio {
+    width: 90%;
+    height: 230vh;
+    margin-right: 10%;
+    position: absolute;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    z-index: 2;
+    position: relative;
+    border: none;
+    box-shadow: none;
+    background-color: inherit;
+    display: none;
+}
+
+
+
+/* perfil_flutuante */
+.perfil_flutuante {
+    display: none;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* PROJETOS */
+.projetos {
+    width: 100%;
+    height: 100%;
+    top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    flex-direction: column;
+    right: 0;
+    border-radius: 10px;
+}
+
+/* titulo_portifolio */
+.titulo_portifolio h3 {
+    font-family: Sora;
+    font-size: 5vw;
+    color: var(--bs-gray-800);
+}
+
+.titulo_portifolio p {
+    color: var(--bs-dark);
+    font-family: VariableFont_wght;
+    font-size: 4.5vw;
+}
+
+
+
+/* cards_portifolio */
+.cards_portifolio {
+    width: 90vw;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    position: relative;
+    padding: 2rem;
+}
+
+/* .cards_portifolio div */
+.cards_portifolio div {
+    width: 90vw;
+    height: 40vh;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.227);
+}
+
+.cards_portifolio div img {
+    width: 100%;
+    object-fit: cover;
+    background-position: center center;
+    border-radius: 10px;
+}
+
+/* .cards_portifolio div a */
+.cards_portifolio div a {
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: -8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--bs-dark);
+    font-size: 5vw;
+    transition: 0.5s;
+    color: var(--bs-white);
+}
+
+.cards_portifolio div a:hover {
+    background-color: white;
+    box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.178);
+    color: var(--bs-dark);
+    scale: 1.1;
+}
+
+
+
+.texto_animado h3 {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Sora;
+    font-size: 5vw;
+    background: linear-gradient(to right, #fc0045 0, #791df3 50%, #00b3ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+/* DIV TEXTO ANIMADO */
+.div_texto_animado_port {
+    height: 15vh;
+    width: 100%;
+    margin-top: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    border-radius: 0px 0px 10px 10px;
+
+}
+
+/* TEXTO ANIMADO MSG */
+.div_texto_animado_port #msg_texto {
+    display: inline-block;
+    padding-left: 100%;
+    white-space: nowrap;
+    animation: rolarTexto 60s linear infinite;
+    font-family: Sora;
+    font-size: 8vw;
+    z-index: 3;
+    transition: animation 0.5s ease;
+    color: var(--bs-dark);
+    cursor: pointer;
+}
+
+@keyframes rolarTexto {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.pause {
+    animation-play-state: paused;
+    /* Pausa a animação */
+}
+
+/* Estilo adicional para o emoji e o texto */
+.emoji {
+    margin-left: 5vw;
+}
+
+
+}

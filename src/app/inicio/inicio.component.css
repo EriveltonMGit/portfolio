@@ -677,7 +677,7 @@
     justify-content: space-around;
 }
 
-.projetos_perfil span a {
+.projetos_perfil span button {
     background-color: var(--bs-info);
     padding: 0.5rem;
     display: flex;
@@ -686,18 +686,19 @@
     justify-content: center;
     gap: 1vw;
     border-radius: 10px;
+    border: none;
     color: white;
     transition: 0.5s;
 }
 
-.projetos_perfil span a:hover {
+.projetos_perfil span button:hover {
     background-color: var(--bs-primary);
     box-shadow: 1px 1px 1rem var(--bs-gray);
 
 }
 
 
-.projetos_perfil span a .bi {
+.projetos_perfil span button .bi {
     rotate: 180deg;
     display: flex;
     align-items: center;
@@ -706,7 +707,7 @@
     transition: 0.5s;
 }
 
-.projetos_perfil span a:hover .bi {
+.projetos_perfil span button:hover .bi {
     rotate: 90deg;
 }
 
@@ -1173,13 +1174,11 @@
         box-shadow: none;
         background-color: inherit;
         z-index: 10;
-        /* display: none; */
-        /* border: 1px solid red; */
         display: flex;
         align-items: center;
         justify-content: space-around;
         flex-direction: column;
-
+        /* display: none; */
     }
 
     #particles-js {
@@ -1270,6 +1269,7 @@
         box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.11);
         z-index: 2;
         padding: 1rem;
+
     }
 
 
@@ -1512,7 +1512,7 @@
 
     #experiencia {
         width: 100%;
-        height: 50vh;
+        height: 60vh;
         top: 0;
         margin-top: 100vh;
         position: absolute;
@@ -1528,8 +1528,6 @@
         backdrop-filter: blur(10px);
         border: 1px solid rgba(0, 0, 0, 0.185);
         box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.11);
-
-
     }
 
     /* titulo_experiencia */
@@ -1538,7 +1536,7 @@
         align-items: center;
         justify-content: flex-start;
         width: 100%;
-        height: 20%;
+        height: 30%;
         border-radius: 10px 10px 0px 0px;
 
     }
@@ -1567,9 +1565,10 @@
         border-radius: 5px;
         padding: 0.6rem;
         font-family: Purista;
-        font-size: 3.8vw;
+        font-size: 4vw;
         border: 1px solid rgb(179, 174, 174);
         background-color: var(--bs-gray-300);
+
     }
 
     .titulo_experiencia h3:hover a {
@@ -1692,9 +1691,9 @@
 
     #especializacao {
         width: 100%;
-        height: 50vh;
+        height: 60vh;
         top: 0;
-        margin-top: 155vh;
+        margin-top: 165vh;
         position: absolute;
         margin-left: 5%;
         margin-right: 5%;
@@ -1708,9 +1707,10 @@
         box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.11);
         z-index: 2;
         padding: 1rem;
+
     }
 
-   
+
     /* texto_especializacao */
     .texto_especializacao {
         display: flex;
@@ -1724,13 +1724,15 @@
     /* .texto_especializacao h3 */
     .texto_especializacao h3 {
         font-family: Sora;
-        font-size:5.7vw;
+        font-size: 5.7vw;
         color: var(--bs-dark);
         margin-bottom: 0px;
 
     }
-    .texto_especializacao .bi{
+
+    .texto_especializacao .bi {
         font-size: 5vw;
+
     }
 
     /* ICON IGREANGEM  */
@@ -1766,6 +1768,7 @@
         justify-content: space-around;
         width: 100%;
         height: 50%;
+
     }
 
     .icon_expecializacao div span {
@@ -1782,18 +1785,20 @@
     }
 
     .icon_expecializacao div span img {
-        width: 13vw;
+        width: 18vw;
+
     }
 
     .icon_expecializacao div span p {
         color: var(--bs-dark);
         font-family: VariableFont_wght;
-        font-size: 3vw;
+        font-size: 3.5vw;
         font-weight: 500;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
+
     }
 
 
@@ -1809,7 +1814,7 @@
         width: 100%;
         height: 100vh;
         top: 0;
-        margin-top: 210vh;
+        margin-top: 230vh;
         position: absolute;
         right: 0;
         display: flex;
@@ -1830,8 +1835,6 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
-        
-
     }
 
     .projetos_perfil span h3 {
@@ -1845,9 +1848,10 @@
         flex-direction: column;
     }
 
-    .projetos_perfil span a {
-        background-color: var(--bs-info);
+    .projetos_perfil span button {
+        background-color: var(--bs-dark);
         padding: 1rem;
+        border: none;
         width: 40%;
         display: flex;
         font-size: 3vw;
@@ -1859,14 +1863,14 @@
         transition: 0.5s;
     }
 
-    .projetos_perfil span a:hover {
-        background-color: var(--bs-primary);
+    .projetos_perfil span button:hover {
+        background-color: var(--bs-info);
         box-shadow: 1px 1px 1rem var(--bs-gray);
 
     }
 
 
-    .projetos_perfil span a .bi {
+    .projetos_perfil span button .bi {
         rotate: 180deg;
         display: flex;
         align-items: center;
@@ -1875,7 +1879,7 @@
         transition: 0.5s;
     }
 
-    .projetos_perfil span a:hover .bi {
+    .projetos_perfil span button:hover .bi {
         rotate: 90deg;
     }
 
@@ -1889,7 +1893,6 @@
         width: 100%;
         height: 100%;
         border-radius: 10px;
-
     }
 
     .projetos_perfil div {
@@ -1946,19 +1949,19 @@
         align-items: center;
         justify-content: center;
         animation: slider_span_icons 1s;
-        border: 1px solid red;
         display: none;
+
     }
 
 
     /* #btn_projetos_flut iconc */
     #btn_projetos_flut a {
-      
+
         display: flex;
         align-items: center;
         justify-content: space-around;
-        border: 1px solid red;
-       
+
+
     }
 
     #btn_projetos_flut .bi {
@@ -2000,7 +2003,7 @@
         width: 100%;
         height: 70vh;
         top: 0;
-        margin-top: 315vh;
+        margin-top: 335vh;
         position: absolute;
         right: 0;
         display: flex;
@@ -2012,6 +2015,7 @@
         box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.11);
         z-index: 3;
         padding: 1rem;
+
     }
 
     /* text_sevicos */
@@ -2020,10 +2024,10 @@
         width: 100%;
         height: 20%;
         display: flex;
-        align-items:center;
+        align-items: center;
         justify-content: center;
         flex-direction: column;
-       
+
 
     }
 
@@ -2036,8 +2040,9 @@
         align-items: center;
         gap: 1vw;
     }
-/* #text_sevicos button */
-    #text_sevicos button { 
+
+    /* #text_sevicos button */
+    #text_sevicos button {
         display: none;
 
     }
@@ -2049,7 +2054,8 @@
 
 
     }
-/*  #text_sevicos button .bi */
+
+    /*  #text_sevicos button .bi */
     #text_sevicos button .bi {
         height: 100%;
         display: flex;
@@ -2077,7 +2083,7 @@
         justify-content: space-around;
         padding: 1rem;
         flex-wrap: wrap;
-        
+
     }
 
 
@@ -2096,9 +2102,10 @@
 
     .card_serv img {
         background-color: var(--bs-white);
-        width: 70%;
+        width: 100%;
         border-radius: 10px;
         padding: 1rem;
+
     }
 
     .card_serv p {
@@ -2129,7 +2136,7 @@
         width: 100%;
         height: 100vh;
         top: 0;
-        margin-top: 390vh;
+        margin-top: 410vh;
         border-radius: 10px;
         margin-bottom: 10vh;
         position: absolute;
@@ -2202,12 +2209,12 @@
 
 
     .footer .social-icons {
-        
+
         color: #791df3;
         display: flex;
         align-items: center;
         justify-content: space-around;
-        
+
 
 
     }
@@ -2215,7 +2222,7 @@
     .footer .social-icons i {
         transition: 0.5s ease-in-out;
         font-size: 7vw;
-        
+
 
     }
 
@@ -2224,12 +2231,13 @@
         scale: 1.2;
     }
 
-    
+
 
     .footer .social-icons a {
         text-decoration: none;
     }
-  /* texto links */
+
+    /* texto links */
     .footer .icon-text {
         display: flex;
         align-items: center;
