@@ -110,14 +110,27 @@ function vamosConverar(){
 
 // MENU DEVICE
 function abrirMenu() {
-  var menu = document.getElementById('menu');
-
-  if (menu.classList.contains('show')) {
-      menu.classList.remove('show');
-  } else {
-      menu.classList.add('show');
+    var menu = document.getElementById('menu');
+    
+    if (menu.classList.contains('show')) {
+        menu.classList.remove('show');
+        document.removeEventListener('click', fecharMenuForaDoMenu);
+    } else {
+        menu.classList.add('show');
+        setTimeout(function() {
+          document.addEventListener('click', fecharMenuForaDoMenu);
+        }, 0); // Adiciona o ouvinte com um pequeno atraso
+    }
   }
-}
+  
+//   FUNÇÃO PARA FECHAR O MENU AO CLICAR NO BODY
+  function fecharMenuForaDoMenu(event) {
+    var menu = document.getElementById('menu');
+    if (!menu.contains(event.target)) { // Verifica se o clique foi fora do menu
+        menu.classList.remove('show');
+        document.removeEventListener('click', fecharMenuForaDoMenu); // Remove o ouvinte após fechar
+    }
+  }
 
 
 
