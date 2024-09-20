@@ -506,7 +506,7 @@
 }
 
 .cards_portifolio div img {
-    width: 100%;
+    width: 90%;
     object-fit: cover;
     background-position: center center;
     border-radius: 10px;
