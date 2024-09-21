@@ -1,8 +1,6 @@
-# Portfolio
+# Portfolio  
 
-
-# Web_page
-**Atenção!** site em construção, responsividade 480.
+**Atenção!** site em construção.  
 ![Descrição da Imagem](https://github.com/EriveltonMGit/portifolio/raw/main/src/assets/capa.png)
 
 Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) version 17.3.4.
