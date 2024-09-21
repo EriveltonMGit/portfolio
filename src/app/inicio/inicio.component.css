@@ -584,18 +584,42 @@
     border-radius: 0px 0px 10px 10px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
+    justify-content: start; /* Muda para start para começar do início */
+    overflow: hidden;
 
 }
-
+/* icons_expeciali */
 .icon_expecializacao div {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 100%;
+    justify-content: start; /* Muda para start para começar do início */
+    width: auto;
+    gap: 4vw;
+    height: 50%;
+    animation: slide_icons_espe 90s linear infinite;
+}
+
+@keyframes slide_icons_espe {
+    0% {
+        transform: translateX(0); /* Começa na posição original */
+    }
+    100% {
+        transform: translateX(-100%); /* Move para a esquerda pela metade do contêiner */
+    }
+}
+
+.icon_expecializacao div::after {
+    content: '';
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: auto;
+    gap: 1vw;
     height: 50%;
 }
+
+
+
 
 .icon_expecializacao div span {
     display: flex;
@@ -611,8 +635,9 @@
 }
 
 .icon_expecializacao div span img {
-    width: 3vw;
+    width: 5vw;
 }
+
 
 .icon_expecializacao div span p {
     color: var(--bs-dark);
@@ -623,9 +648,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
-
+.icon_expecializacao div span .bi{
+    font-size: 3vw;
+}
 
 
 
@@ -1239,10 +1267,11 @@
     /*CARD  PERFIL */
     #section_perfil {
         width: 100%;
-        height: 110vh;
+        height: 100vh;
         margin-top: 20vh;
         position: absolute;
         top: 0;
+        left: 0;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -1252,7 +1281,7 @@
         border: 1px solid rgba(0, 0, 0, 0.185);
         box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.11);
         z-index: 2;
-        padding: 1rem;
+       
 
     }
 
@@ -1285,7 +1314,7 @@
 
     /* IMG DO PERFIL */
     .img_perfil img {
-        width: 45vw;
+        width: 40vw;
         object-fit: cover;
         background-repeat: no-repeat;
         background-size: cover;
@@ -1343,7 +1372,7 @@
     /* H3 DO PERFIL */
     .text_perfil h3 {
         font-family: Sora;
-        font-size: 6vw;
+        font-size: 4vw;
         color: var(--bs-gray-800);
         display: flex;
         align-items: center;
@@ -1355,7 +1384,7 @@
 
     .text_perfil h3 span {
         font-family: Sora;
-        font-size: 6vw;
+        font-size: 4vw;
         color: var(--bs-gray-800);
     }
 
@@ -1363,7 +1392,7 @@
     .text_perfil p {
         color: var(--bs-dark);
         font-family: VariableFont_wght;
-        font-size: 4vw;
+        font-size: 3vw;
 
     }
 
@@ -1413,6 +1442,7 @@
         font-family: VariableFont_wght;
         font-size: 3vw;
         transition: 0.5s;
+        width: 100%;
 
 
     }
@@ -1433,6 +1463,7 @@
         transition: 0.5s;
         font-family: VariableFont_wght;
         font-size: 3vw;
+        width: 100%;
     }
 
     .btn_perfil button:nth-child(2):hover {
@@ -1467,7 +1498,7 @@
     /* ICONS DO PERFIL CONFIG */
     .icons_perfil div .bi {
         border: 1px solid var(--bs-gray-300);
-        font-size: 8vw;
+        font-size: 7vw;
         border-radius: 5px;
         padding: 0.3rem;
         display: flex;
@@ -1496,9 +1527,9 @@
 
     #experiencia {
         width: 100%;
-        height: 60vh;
+        height: 70vh;
         top: 0;
-        margin-top: 140vh;
+        margin-top: 130vh;
         position: absolute;
         margin-left: 5%;
         margin-right: 5%;
@@ -1750,40 +1781,68 @@
     .icon_expecializacao div {
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        width: 100%;
+        justify-content: start; /* Muda para start para começar do início */
+        width: auto;
+        gap: 5vw;
         height: 50%;
-
+        animation: slide_icons_espe 90s linear infinite;
     }
-
+    
+    @keyframes slide_icons_espe {
+        0% {
+            transform: translateX(0); /* Começa na posição original */
+        }
+        100% {
+            transform: translateX(-100%); /* Move para a esquerda pela metade do contêiner */
+        }
+    }
+    
+    .icon_expecializacao div::after {
+        content: '';
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        width: auto;
+        gap: 2vw;
+        height: 50%;
+    }
+    
+    
+    
+    
     .icon_expecializacao div span {
         display: flex;
         align-items: center;
         justify-content: space-around;
         flex-direction: column;
-
+    
         border-radius: 10px;
         height: 90%;
-        width: 32%;
+        width: 40%;
+        border: 1px solid rgba(0, 0, 0, 0.438);
         color: var(--bs-dark);
-
+    
     }
-
+    
     .icon_expecializacao div span img {
-        width: 18vw;
-
+        width: 20vw;
     }
-
+    
+    
     .icon_expecializacao div span p {
         color: var(--bs-dark);
         font-family: VariableFont_wght;
-        font-size: 3.5vw;
+        font-size: 3vw;
         font-weight: 500;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-
+        text-align: center;
+    }
+    
+    .icon_expecializacao div span .bi{
+        font-size: 3vw;
     }
 
 
@@ -4052,40 +4111,68 @@
     .icon_expecializacao div {
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        width: 100%;
+        justify-content: start; /* Muda para start para começar do início */
+        width: auto;
+        gap: 5vw;
         height: 50%;
-
+        animation: slide_icons_espe 90s linear infinite;
     }
-
+    
+    @keyframes slide_icons_espe {
+        0% {
+            transform: translateX(0); /* Começa na posição original */
+        }
+        100% {
+            transform: translateX(-100%); /* Move para a esquerda pela metade do contêiner */
+        }
+    }
+    
+    .icon_expecializacao div::after {
+        content: '';
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        width: auto;
+        gap: 2vw;
+        height: 50%;
+    }
+    
+    
+    
+    
     .icon_expecializacao div span {
         display: flex;
         align-items: center;
         justify-content: space-around;
         flex-direction: column;
-
+    
         border-radius: 10px;
         height: 90%;
-        width: 32%;
+        width: 40%;
+        border: 1px solid rgba(0, 0, 0, 0.438);
         color: var(--bs-dark);
-
+    
     }
-
+    
     .icon_expecializacao div span img {
-        width: 18vw;
-
+        width: 25vw;
     }
-
+    
+    
     .icon_expecializacao div span p {
         color: var(--bs-dark);
         font-family: VariableFont_wght;
-        font-size: 3.5vw;
+        font-size: 4.5vw;
         font-weight: 500;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-
+        text-align: center;
+    }
+    
+    .icon_expecializacao div span .bi{
+        font-size: 3vw;
     }
 
 
@@ -5211,44 +5298,69 @@
     .icon_expecializacao div {
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        width: 100%;
+        justify-content: start; /* Muda para start para começar do início */
+        width: auto;
+        gap: 5vw;
         height: 50%;
-
+        animation: slide_icons_espe 90s linear infinite;
     }
-
+    
+    @keyframes slide_icons_espe {
+        0% {
+            transform: translateX(0); /* Começa na posição original */
+        }
+        100% {
+            transform: translateX(-100%); /* Move para a esquerda pela metade do contêiner */
+        }
+    }
+    
+    .icon_expecializacao div::after {
+        content: '';
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        width: auto;
+        gap: 2vw;
+        height: 50%;
+    }
+    
+    
+    
+    
     .icon_expecializacao div span {
         display: flex;
         align-items: center;
         justify-content: space-around;
         flex-direction: column;
-
+    
         border-radius: 10px;
         height: 90%;
-        width: 32%;
+        width: 40%;
+        border: 1px solid rgba(0, 0, 0, 0.438);
         color: var(--bs-dark);
-
+    
     }
-
+    
     .icon_expecializacao div span img {
-        width: 18vw;
-
+        width: 25vw;
     }
-
+    
+    
     .icon_expecializacao div span p {
         color: var(--bs-dark);
         font-family: VariableFont_wght;
-        font-size: 3.5vw;
+        font-size: 4.5vw;
         font-weight: 500;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-
+        text-align: center;
     }
-
-
-
+    
+    .icon_expecializacao div span .bi{
+        font-size: 3vw;
+    }
 
 
 
