@@ -1,7 +1,7 @@
 /* SECTION SERVIÇOS */
 #servicos {
     width: 80.1%;
-    height: 430vh;
+    height: 440vh;
     position: relative;
     margin-left: 10%;
     margin-bottom: 30vh;
@@ -37,7 +37,7 @@
     width: 25vw;
     height: 85vh;
     top: 20vh;
-    margin-top: -340vh;
+    margin-top: -400vh;
     position: sticky;
     display: flex;
     align-items: center;
@@ -372,12 +372,14 @@
     border-radius: 5px;
 
 }
-
+.card_servico div p{
+    font-size: 1.2vw;
+}
 
 
 
 /* video_servicos */
-.video_servicos {
+.img_servicos {
     width: 100%;
     height: 15%;
     display: flex;
@@ -386,9 +388,10 @@
     flex-direction: column;
     text-align: center;
     border-radius: 10px;
+   
 }
 
-.video_servicos img {
+.img_servicos img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
@@ -396,8 +399,20 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    animation: slide_img_serv 10s linear infinite;
 }
 
+@keyframes slide_img_serv {
+    0%{
+           transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+    100%{
+       transform: translate(0);
+    }
+}
 
 
 
@@ -475,6 +490,7 @@
 /* COLLAPSE */
 .container {
     width: 90%;
+    margin-top: 10vh;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -495,7 +511,10 @@
     border-radius: 10px;
 }
 
-
+/* accordion-body */
+.accordion-body{
+    font-size: 1.2vw;
+}
 .accordion-button {
     background-color: var(--bs-gray-100);
     outline: none;
@@ -536,6 +555,585 @@
     width: 4vw;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ________________MIDIA SCREN 1000px 1300pxPX___________________ */
+
+@media all and (min-width: 1000px) and (max-width: 1300px){
+    /* SECTION SERVIÇOS */
+#servicos {
+    width: 90%;
+    height: 400vh;
+    position: relative;
+    margin-left: 5%;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 10px;
+    z-index: 2;
+    padding: 1rem;
+    display: none;
+
+    
+}
+
+
+/* perfil_flutuante */
+.perfil_flutuante {
+    width: 28vw;
+    height: 95%;
+    position: absolute;
+    left: 0;
+    top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+
+  
+}
+
+
+/* seviços */
+#section_servicos {
+    width: 28vw;
+    height: 85vh;
+    top: 20vh;
+    margin-top: -400vh;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 0, 0, 0.185);
+    box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.26);
+    z-index: 2;
+    padding: 1rem;
+}
+
+
+/* DESCRIÇÃO PERFIL */
+#section_servicos .perfil_descricao {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 10px 10px 0px 0px;
+
+
+}
+
+/* img_perfil */
+.img_perfil {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: inset 0px 20px 50px rgba(0, 0, 0, 0.671);
+    position: relative;
+
+
+}
+
+.img_perfil img {
+    width: 13vw;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+
+}
+
+/* text_perfil */
+.text_perfil {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 45%;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+/* NOME DO CARD FLUTUANTE SERVIÇOS */
+.text_perfil h3 {
+    font-family: Sora;
+    font-size: 2vw;
+    color: var(--bs-gray-800);
+}
+
+/* TEXTO DO CARD FLUTUANTE (P) */
+.text_perfil p {
+    color: var(--bs-dark);
+    font-family: VariableFont_wght;
+    font-size: 1.3vw;
+}
+
+/*  */
+.text_perfil p .bi {
+    color: var(--bs-info);
+}
+
+/* PERFIL CONTATO */
+.perfil_contato {
+    width: 100%;
+    height: 20%;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* btn_perfil */
+.btn_perfil {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btn_perfil button {
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.btn_perfil button:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    gap: 1vw;
+    background-color: var(--bs-dark);
+    color: var(--bs-white);
+    transition: 0.5s;
+    font-family: VariableFont_wght;
+    font-size: 1.2vw;
+    transition: 0.5s;
+
+}
+
+.btn_perfil button:nth-child(1):hover {
+    background-color: var(--bs-info);
+}
+
+.btn_perfil button:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    gap: 1vw;
+    color: var(--bs-dark);
+    transition: 0.5s;
+    font-family: VariableFont_wght;
+    font-size: 1.2vw;
+}
+
+.btn_perfil button:nth-child(2):hover {
+    background-color: var(--bs-success);
+    box-shadow: 1px 1px 1rem rgba(0, 255, 64, 0.678);
+    color: white;
+}
+
+
+
+
+
+/* ICONS PERFIL */
+.icons_perfil {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons_perfil div {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1vw;
+}
+
+.icons_perfil div .bi {
+    border: 1px solid var(--bs-gray-300);
+    font-size: 2.5vw;
+    border-radius: 5px;
+    padding: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.icons_perfil div .bi:hover {
+    box-shadow: 1px 1px 1rem var(--bs-gray-800);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* cards_icon */
+.card_servicos {
+    width: 66%;
+    height: 95%;
+    top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    flex-direction: column;
+    right: 0;
+    padding: 2rem;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 0, 0, 0.185);
+    box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.26);
+
+}
+
+
+
+/* titulo_servicos */
+.titulo_servicos {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 10px;
+
+}
+
+/* .titulo_servicos h3 */
+.titulo_servicos h3 {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Sora;
+    font-size: 3vw;
+    border-radius: 10px;
+    color: var(--bs-dark);
+    
+}
+
+/* .titulo_servicos p button */
+.titulo_servicos h3 .bi {
+    width: 20%;
+    border-radius: 10px;
+    border: none;
+    margin-right: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bs-dark);
+    transition: 0.5s;
+    padding: 0.5rem;
+
+
+}
+
+
+/* .titulo_servicos p */
+.titulo_servicos p {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: Sora;
+    font-size: 1.5vw;
+    color: var(--bs-dark);
+}
+
+.bi-gear-fill{
+ animation: slide_engrangem 5s linear infinite ;
+}
+@keyframes slide_engrangem {
+    0%{
+     transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* cards_icons_servicos */
+.cards_icons_servicos {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+/* card_servico */
+.card_servico {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 50%;
+}
+
+/* .card_servico div */
+.card_servico div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 20%;
+    height: 80%;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.342);
+    
+}
+
+.card_servico div img {
+    width: 6vw;
+    background-color: var(--bs-gray-800);
+    border-radius: 5px;
+
+}
+.card_servico div p{
+    font-size: 1.2vw;
+}
+
+
+
+/* video_servicos */
+.img_servicos {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+   
+}
+
+.img_servicos img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: slide_img_serv 10s linear infinite;
+}
+
+@keyframes slide_img_serv {
+    0%{
+           transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+    100%{
+       transform: translate(0);
+    }
+}
+
+
+
+
+
+
+/* TEXTO ANIMADO*/
+.texto_animado {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 1rem;
+    width: 100%;
+    overflow-y: auto;
+}
+
+/* DIV TEXTO ANIMADO */
+.div_texto_animado {
+    height:15vh;
+    width: 100%;
+    margin-top: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    border-radius: 0px 0px 10px 10px;
+
+}
+
+/* TEXTO ANIMADO MSG */
+.texto_animado #msg_texto {
+    display: inline-block;
+    padding-left: 100%;
+    white-space: nowrap;
+    animation: rolarTexto 60s linear infinite;
+    font-family: Sora;
+    font-size: 2vw;
+    z-index: 3;
+    transition: animation 0.5s ease;
+    color: var(--bs-gray-600);
+    cursor: pointer;
+}
+
+@keyframes rolarTexto {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.pause {
+    animation-play-state: paused;
+    /* Pausa a animação */
+}
+
+/* Estilo adicional para o emoji e o texto */
+.emoji {
+    margin-left: 5vw;
+}
+
+
+
+
+
+
+
+/* COLLAPSE */
+.container {
+    width: 90%;
+    margin-top: 10vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    position: absolute;
+
+}
+
+ .texto_animado h3 {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Sora;
+    font-size: 1.6vw;
+    color: var(--bs-gray-800);
+    border-radius: 10px;
+}
+
+/* accordion-body */
+.accordion-body{
+    font-size: 1.2vw;
+}
+.accordion-button {
+    background-color: var(--bs-gray-100);
+    outline: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: 0.5s ease-in-out;
+    font-size: 1.2vw;
+    font-family: Purista;
+    border: none;
+}
+
+.accordion-button:hover {
+    background-color: var(--bs-white);
+}
+
+
+/* carouselExampleIndicators */
+#carouselExampleIndicators {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#carouselExampleIndicators img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* #carouselExampleIndicators */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(41%) sepia(84%) saturate(6171%) hue-rotate(200deg) brightness(95%) contrast(105%);
+    width: 4vw;
+}
+
+}
 
 
 
