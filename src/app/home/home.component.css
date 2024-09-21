@@ -181,7 +181,7 @@
 
 
 /* ______________-MIDIA SCREN 1000PX MIN A MAX DE 1300PX */
-@media all and (min-width: 1000px) and (max-width: 1300px){
+@media all and (min-width: 801px) and (max-width: 1200px){
     /* NAV_BAR */
 #nav_bar {
     width: 90%;
@@ -723,7 +723,12 @@
         display: none; 
     }
 }
-
+@media screen and (min-width:801px){
+    #menu{
+        display: none; 
+    }
+    
+}
 
 
 /* ________________MIDIA SCREN 32480PX___________________ */

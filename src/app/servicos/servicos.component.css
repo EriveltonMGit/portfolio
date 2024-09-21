@@ -574,7 +574,7 @@
 
 /* ________________MIDIA SCREN 1000px 1300pxPX___________________ */
 
-@media all and (min-width: 1000px) and (max-width: 1300px){
+@media all and (min-width: 801px) and (max-width: 1200px){
     /* SECTION SERVIÇOS */
 #servicos {
     width: 90%;
