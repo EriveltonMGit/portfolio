@@ -42,6 +42,7 @@ A página de contato oferece uma forma simples e direta de me enviar mensagens. 
 Neste projeto, dediquei um botão que direciona o usuário para minha página de desenvolvimento e serviços:
  <a href="https://web-desing-page.netlify.app/">Digital Dream</a> . Aqui, mostro uma visão completa do meu trabalho, destacando minhas habilidades em desenvolvimento front-end e design UX/UI, aplicadas na criação de experiências digitais eficientes e inovadoras. Através deste portfólio, você pode explorar meus principais projetos, entender as ferramentas e tecnologias que utilizo, e ver como abordo desafios para entregar soluções modernas e funcionais.
 
+  ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=EriveltonMGit&layout=compact)
 
 
 
