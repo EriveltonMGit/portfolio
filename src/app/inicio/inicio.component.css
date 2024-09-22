@@ -3553,16 +3553,16 @@
 
 
 
-/* ------------------MIDIAS SCREENS CELULAR MODO HORIZONTAL 480px ---------------------------- */
-@media only screen and (max-height: 480px) and (orientation: landscape) {
+/* ------------------MIDIAS SCREENS CELULAR MODO HORIZONTAL 400px ---------------------------- */
+@media only screen and (max-height: 400px) and (orientation: landscape) {
     /* Estilos para quando o celular estiver em modo paisagem (deitado) */
 
     /* INICIO */
     #inicio {
-        width: 80%;
+        width: 90%;
         height: 250vh;
-        margin-right: 10%;
-        margin-left: 10%;
+        margin-right: 5%;
+        margin-left: 5%;
         border-radius: 10px;
         position: relative;
         border: none;
@@ -3646,7 +3646,7 @@
 
     /*CARD  PERFIL */
     #section_perfil {
-        width: 25vw;
+        width:28vw;
         height: 105vh;
         margin-top: 20vh;
         position: absolute;
@@ -3693,7 +3693,7 @@
 
     /* IMG DO PERFIL */
     .img_perfil img {
-        width: 11vw;
+        width: 9.5vw;
         object-fit: cover;
         background-repeat: no-repeat;
         background-size: cover;
@@ -3899,11 +3899,11 @@
     /* PROJETOS CARD HOME */
 
     #experiencia {
-        width: 25vw;
+        width: 28vw;
         height: 50vh;
         margin-top: 20vh;
         position: absolute;
-        margin-left: 27vw;
+        margin-left: 31vw;
         margin-right: 2vw;
         display: flex;
         flex-direction: column;
@@ -4080,11 +4080,11 @@
     /* ESPECIALIZÇÃO CARD HOME */
 
     #especializacao {
-        width: 25vw;
+        width: 28vw;
         height: 50vh;
         top: 75vh;
         position: absolute;
-        margin-left: 27vw;
+        margin-left: 31vw;
         margin-right: 2vw;
         display: flex;
         align-items: center;
@@ -4200,7 +4200,7 @@
 
     /* PROJETOS CARD */
     #projetos {
-        width: 25vw;
+        width: 28vw;
         height: 160vh;
         margin-top: 20vh;
         position: absolute;
@@ -4385,7 +4385,7 @@
     /*CARD PERFIL */
     /* PERFIL */
     #servicos_card {
-        width: 52vw;
+        width: 59vw;
         height: 50vh;
         top: 130vh;
         position: absolute;
@@ -4524,170 +4524,188 @@
 
 
 
-    /* CONTATO */
-    #contato {
-        width: 100%;
-        height: 110vh;
-        top: 185vh;
-        border-radius: 10px;
-        margin-bottom: 10vh;
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-direction: column;
-        padding: 1rem;
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(0, 0, 0, 0.185);
-        box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.26);
-        z-index: 2;
-        padding: 1rem;
+  /* CONTATO */
+#contato {
+    width: 100%;
+    height: 140vh;
+    top: 190vh;
+    border-radius: 10px;
+    margin-bottom: 10vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 1rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 0, 0, 0.185);
+    box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.26);
+    z-index: 2;
+    padding: 1rem;
+}
+
+
+/* // bK_blur */
+.bK_blur {
+    width: 50vw;
+    height: 60vh;
+    position: absolute;
+    left: 0;
+
+}
+
+.bK_blur img {
+    filter: blur(100px);
+    width: 30%;
+    margin-left: 9%;
+    animation: animation_blur 10s infinite;
+}
+
+
+
+@keyframes animation_blur {
+    0% {
+        transform: translateY(0);
+        rotate: 10deg;
+    }
+
+    20% {
+        transform: translateY(-90px);
 
     }
 
-
-    /* // bK_blur */
-    .bK_blur {
-        width: 40vw;
-        height: 60vh;
-        position: absolute;
-        left: 0;
-        display: none;
-    }
-
-
-
-
-
-
-    /* // FOOTER */
-    .footer {
-        font-family: Sora;
-        font-size: 1.4vw;
-        color: var(--bs-gray-600);
-        width: 100%;
-        height: 100%;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    100% {
+        transform: translateY(0);
 
     }
+}
+
+/* // FOOTER */
+.footer {
+    font-family: Sora;
+    font-size: 1.4vw;
+    color: var(--bs-gray-600);
+    width: 100%;
+    position: relative;
+
+}
 
 
 
-    .footer .social-icons {
-        font-size: 24px;
-        width: 50%;
-        color: #791df3;
-        display: flex;
-        margin: 0 auto;
-        align-items: center;
-        justify-content: space-around;
+.footer .social-icons {
+    font-size: 24px;
+    margin: 0 15px;
+    color: #791df3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+
+.footer .social-icons i {
+    transition: 0.5s ease-in-out;
+    font-size: 2vw;
+
+}
+
+.footer .social-icons a i:hover {
+    color: #000000;
+    scale: 1.2;
+}
+
+.footer .copy {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+.footer .social-icons a {
+    text-decoration: none;
+}
+
+.footer .icon-text {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    color: var(--bs-dark);
+    font-family: VariableFont_wght;
+    font-size: 1.5vw;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
 
 
 
-    }
+}
 
-    .footer .social-icons i {
-        transition: 0.5s ease-in-out;
-        font-size: 2vw;
+.footer .icon-text:hover {
+    background-color: var(--bs-gray-600);
+    color: var(--bs-dark);
 
-    }
+}
 
-    .footer .social-icons a i:hover {
-        color: #000000;
-        scale: 1.2;
-    }
+.footer .icon-text:hover i {
+    color: #ffffff;
+}
 
-    .footer .copy {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-    }
+.footer .icon-text i {
+    margin-right: 10px;
+    transition: 0.5s ease-in-out;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    .footer .social-icons a {
-        text-decoration: none;
-    }
-
-    .footer .icon-text {
-        display: flex;
-        align-items: center;
-        margin: 0 auto;
-        width: 60%;
-        transition: 0.2s ease-in-out;
-        cursor: pointer;
-        color: var(--bs-dark);
-        font-family: VariableFont_wght;
-        font-size: 1.5vw;
-        border-radius: 5px;
-     
+}
 
 
-    }
+/* // text-uppercase */
+.text-uppercase {
 
-    .footer .icon-text:hover {
-        background-color: var(--bs-gray-600);
-        color: var(--bs-dark);
+    font-family: Sora;
+    font-size: 1.6vw;
+    color: var(--bs-gray-800);
 
-    }
+}
 
-    .footer .icon-text:hover i {
-        color: #ffffff;
-    }
+.text-uppercase_p {
+    color: var(--bs-dark);
+    font-family: VariableFont_wght;
+    font-size: 1.2vw;
+    font-weight: bolder;
+}
 
-    .footer .icon-text i {
-        margin-right: 10px;
-        transition: 0.5s ease-in-out;
-        width: 20%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+#copyright {
+    width: 100%;
+    height: 15vh;
+    color: var(--color-text-nav);
+    font-family: VariableFont_wght;
+    font-size: 1.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
 
-    }
+}
+
+.text-reset img {
+    width: 8vw;
+}
+
+/* // qr_code_mentoria */
+#qr_code_mentoria {
+    margin-top: 2vh;
+    width: 7vw;
+    z-index: 1;
+
+}
 
 
-    /* // text-uppercase */
-    .text-uppercase {
-
-        font-family: Sora;
-        font-size: 1.5vw;
-        color: var(--bs-gray-800);
-
-    }
-
-    .text-uppercase_p {
-        color: var(--bs-dark);
-        font-family: VariableFont_wght;
-        font-size: 1.2vw;
-        font-weight: bolder;
-    }
-
-    #copyright {
-        width: 100%;
-        height: 15vh;
-        color: var(--color-text-nav);
-        font-family: VariableFont_wght;
-        font-size: 1.2vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        bottom: 0px;
-
-    }
-
-    .text-reset img {
-        width: 8vw;
-    }
-
-    /* // qr_code_mentoria */
-    #qr_code_mentoria {
-        margin-top: 2vh;
-        width: 7vw;
-        z-index: 1;
-
-    }
 
 
 }

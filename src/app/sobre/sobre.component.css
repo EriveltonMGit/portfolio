@@ -2951,7 +2951,1038 @@ svg {
 
 }
 
+/* ------------------MIDIAS SCREENS CELULAR MODO HORIZONTAL 400px ---------------------------- */
+@media only screen and (max-height: 400px) and (orientation: landscape){
+    /* SOBRE */
 
+#sobre {
+    width: 90%;
+    height: 380vh;
+    margin-right: 5%;
+    margin-left: 5%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    z-index: 2;
+    position: relative;
+    border: none;
+    box-shadow: none;
+    background-color: inherit;
+    display: none;
+
+}
+
+
+
+
+
+
+
+
+/* perfil_flutuante */
+.perfil_flutuante {
+    width: 28vw;
+    height: 100%;
+    top: 20vh;
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/* PERFIL */
+#sobre #section_perfil {
+    width: 28vw;
+    height: 95vh;
+    top: 20vh;
+    margin-top: -300vh;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 0, 0, 0.185);
+    box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.26);
+    z-index: 2;
+    padding: 1rem;
+}
+
+
+/* DESCRIÇÃO PERFIL */
+#sobre .perfil_descricao {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 10px 10px 0px 0px;
+}
+
+/* img_perfil */
+.img_perfil {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: inset 0px 20px 50px rgba(0, 0, 0, 0.671);
+    position: relative;
+
+
+}
+
+.img_perfil img {
+    width: 9vw;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+
+}
+
+/* text_perfil */
+.text_perfil {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 45%;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+.text_perfil h3 {
+    font-family: Sora;
+    font-size: 1.2vw;
+    color: var(--bs-gray-800);
+}
+
+.text_perfil p {
+    color: var(--bs-dark);
+    font-family: VariableFont_wght;
+    font-size: 1vw;
+}
+
+.text_perfil p .bi {
+    color: var(--bs-info);
+}
+
+/* PERFIL CONTATO */
+.perfil_contato {
+    width: 100%;
+    height: 20%;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* btn_perfil */
+.btn_perfil {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btn_perfil button {
+    padding: 0.5rem;
+    border-radius: 5px;
+
+
+}
+
+.btn_perfil button:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    gap: 1vw;
+    background-color: var(--bs-dark);
+    color: var(--bs-white);
+    transition: 0.5s;
+    font-family: VariableFont_wght;
+    font-size: 1vw;
+    transition: 0.5s;
+
+}
+
+.btn_perfil button:nth-child(1):hover {
+    background-color: var(--bs-info);
+}
+
+.btn_perfil button:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    gap: 1vw;
+    color: var(--bs-dark);
+    transition: 0.5s;
+    font-family: VariableFont_wght;
+    font-size: 1.2vw;
+}
+
+.btn_perfil button:nth-child(2):hover {
+    background-color: var(--bs-success);
+    box-shadow: 1px 1px 1rem rgba(0, 255, 64, 0.678);
+    color: white;
+}
+
+
+
+
+
+/* ICONS PERFIL */
+.icons_perfil {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons_perfil div {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1vw;
+}
+
+.icons_perfil div .bi {
+    border: 1px solid var(--bs-gray-300);
+    font-size: 1.2vw;
+    border-radius: 5px;
+    padding: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.icons_perfil div .bi:hover {
+    box-shadow: 1px 1px 1rem var(--bs-gray-800);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CARD SOBRE*/
+.card_sobre {
+    /* border: 1px solid red; */
+    width: 66%;
+    height: 100%;
+    top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    flex-direction: column;
+    right: 0;
+    padding: 2rem;
+    border-radius: 10px;
+    backdrop-filter: blur(50px);
+    border: 1px solid rgba(0, 0, 0, 0.185);
+    box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.26);
+
+}
+
+
+
+
+/* card_sobre_text_perfil */
+.card_sobre_text_perfil {
+    width: 100%;
+    height: 20%;
+    border-radius: 10px;
+}
+
+.card_sobre_text_perfil div {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.card_sobre_text_perfil div h3 {
+    color: var(--bs-dark);
+    font-size: 1.5vw;
+    font-family: Sora;
+    margin-bottom: 0px;
+}
+
+.card_sobre_text_perfil div button {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 10px;
+    transition: 0.5s;
+    color: rgb(0, 0, 0);
+    margin-right: 1vw;
+    font-family: VariableFont_wght;
+    font-size: 1vw;
+    font-weight: 600;
+
+}
+
+
+
+/* Estilo básico para o ícone de status */
+.status-icon {
+    width: 0.5vw;
+    height: 0.5vw;
+    background-color: var(--bs-success);
+    border-radius: 50%;
+    position: relative;
+    animation: pulse 1.5s infinite;
+}
+
+.card_sobre_text_perfil div button:hover .status-icon {
+    background-color: var(--bs-dark);
+}
+
+/* Animação de pulsar */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7);
+    }
+
+    70% {
+        transform: scale(1.2);
+        box-shadow: 0 0 10px 10px rgba(76, 175, 80, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
+    }
+}
+
+
+/* .card_sobre_text_perfil p  */
+.card_sobre_text_perfil p {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-family: VariableFont_wght;
+    color: var(--bs-dark);
+    font-size: 1.3vw;
+    font-weight: 600;
+
+}
+
+
+/* .card_sobre_text_perfil span */
+.card_sobre_text_perfil samp {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2vw;
+
+}
+
+.card_sobre_text_perfil samp a {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 10px;
+    transition: 0.5s;
+    background-color: var(--bs-dark);
+    color: white;
+    margin-right: 1vw;
+    font-family: VariableFont_wght;
+    font-size: 1vw;
+    font-weight: 600;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.card_sobre_text_perfil samp a:hover {
+    box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.384);
+    background-color: var(--bs-info);
+    color: white;
+}
+
+.card_sobre_text_perfil samp a .bi-diagram-3 {
+    rotate: 90deg;
+    transition: 0.5s;
+}
+
+.card_sobre_text_perfil samp a:hover .bi-diagram-3 {
+    rotate: -90deg;
+}
+
+/* github */
+.card_sobre_text_perfil samp a .bi-github {
+    rotate: 0deg;
+    transition: 0.5s;
+}
+
+.card_sobre_text_perfil samp a:hover .bi-github {
+    rotate: 360deg;
+}
+
+
+/* TEXTO CIRCULAR */
+
+/* // texto_circular */
+.texto_circular {
+    position: absolute;
+    right: 0;
+    /* width: 10vw;
+    height: 10vh; */
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    margin-right: 3vw;
+}
+
+svg {
+    width: 15%;
+    height: 38%;
+    background-color: transparent;
+    overflow: visible;
+    border-radius: 50%;
+    padding: 0.3rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: -15vh;
+}
+
+text {
+    fill: #aaa6a6;
+    font-family: VariableFont_wght;
+    font-size: 1.7vw;
+
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+svg {
+    animation: rotate 10s linear infinite;
+    transform-origin: center;
+}
+
+
+
+
+
+
+/* adefinir_card */
+.atividades_card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+}
+
+
+/* // DESCRIÇAO  */
+
+.descricao {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+
+
+}
+
+
+/* // TEXTO H3 DOS OBJETIVOS */
+.obj_text {
+
+    font-family: Purista;
+    color: var(--bs-dark);
+    font-size: 2vw;
+    font-weight: bolder;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* // DESCRIÇÃO DOS OBJETIVOS TEXTO (P) */
+.obj_desc_1 p {
+    font-family: VariableFont_wght;
+    color: var(--bs-gray-600);
+    font-size: 1.4vw;
+    font-weight: 600;
+    width: 100%;
+    height: 30%;
+
+
+}
+
+
+/* // DESCRIÇÃO ÁREA DE INTERESSE (P) */
+.inte_text {
+    font-family: Purista;
+    color: var(--bs-gray-800);
+    font-size: 2vw;
+    font-weight: bolder;
+    width: 100%;
+    height: 10%;
+    gap: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+/* inte_text p */
+.inte_desc_1 p {
+    font-family: VariableFont_wght;
+    color: var(--bs-gray-600);
+    font-size: 1.4vw;
+    font-weight: 600;
+    height: 30%;
+    width: 100%;
+
+}
+
+
+
+
+
+/* // BUTTON (A) - GITHUB */
+.descricao a {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    border: none;
+    padding: 0.5rem;
+    margin-top: -2vh;
+    border-radius: 10px;
+    transition: .5s ease-in-out;
+    border: 1px solid var(--bs-gray-600);
+    cursor: pointer;
+    font-size: 1.2vw;
+    color: var(--bs-gray-600);
+    z-index: 1;
+
+}
+
+.descricao a:hover {
+    box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.322);
+    color: var(--bs-red);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* artigos_card */
+.artigos_card {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+
+.artigos_card h3 {
+    width: 100%;
+    font-size: 1.5vw;
+    font-family: Sora;
+    margin-bottom: 0px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3vw;
+
+
+
+}
+
+.artigos_card .bi {
+    rotate: 90deg;
+    color: var(--bs-dark);
+}
+
+/* CARDS -1 */
+.cards_1 {
+    padding: 1rem;
+    width: 100%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    padding: 1rem;
+    text-align: center;
+
+
+}
+
+.cards_1 button {
+    border: none;
+    transition: 0.5s;
+
+    border: 1px solid rgba(0, 0, 0, 0.295);
+    background-color: rgb(121, 51, 51);
+
+
+}
+
+.cards_1 button .bi {
+    color: white;
+    font-size: 1.4vw;
+}
+
+.cards_1 button:hover {
+    background-color: red;
+    color: white;
+}
+
+.card {
+    background-color: red;
+}
+
+.cards_1 p {
+    font-size: 1.2vw;
+    font-family: Sora;
+    color: var(--bs-dark);
+}
+
+/* IMAGEM DOS CADRS CERTIFICADOS */
+#img_cards_projetos {
+    width: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+/* #card_flu_certificado_1 */
+#card_flu_certificado_1 {
+    position: fixed;
+    width: 90%;
+    height: 60vh;
+    right: 0;
+    margin-right: 5%;
+    margin-right: 5%;
+    box-shadow: 1px 1px 1rem black;
+    scale: 1.1;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#card_flu_certificado_1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* #card_flu_certificado_1 button */
+#card_flu_certificado_1 button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 10%;
+    margin-right: 1vw;
+    margin-top: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: 0.5s;
+
+}
+
+#card_flu_certificado_1 button:hover {
+    box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.342);
+}
+
+
+/* #card_flu_certificado_1 */
+#card_flu_certificado_2 {
+    position: fixed;
+    width: 90%;
+    height: 60vh;
+    right: 0;
+    margin-right: 5%;
+    margin-right: 5%;
+    box-shadow: 1px 1px 1rem black;
+    scale: 1.1;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#card_flu_certificado_2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* #card_flu_certificado_1 button */
+#card_flu_certificado_2 button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 10%;
+    margin-right: 1vw;
+    margin-top: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: 0.5s;
+
+}
+
+#card_flu_certificado_1 button:hover {
+    box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.342);
+}
+
+/* #card_flu_certificado_3 */
+#card_flu_certificado_3 {
+    position: fixed;
+    width: 90%;
+    height: 60vh;
+    right: 0;
+    margin-right: 5%;
+    margin-right: 5%;
+    box-shadow: 1px 1px 1rem black;
+    scale: 1.1;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#card_flu_certificado_3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* #card_flu_certificado_1 button */
+#card_flu_certificado_3 button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 10%;
+    margin-right: 1vw;
+    margin-top: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: 0.5s;
+
+}
+
+#card_flu_certificado_3 button:hover {
+    box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.342);
+}
+
+/* card flu 4  CERTIFICADO*/
+#card_flu_certificado_4 {
+    position: fixed;
+    width: 90%;
+    height: 60vh;
+    right: 0;
+    margin-right: 5%;
+    margin-right: 5%;
+    box-shadow: 1px 1px 1rem black;
+    scale: 1.1;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#card_flu_certificado_4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+/* #card_flu_certificado_1 button */
+#card_flu_certificado_4 button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 10%;
+    margin-right: 1vw;
+    margin-top: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: 0.5s;
+
+}
+
+#card_flu_certificado_4 button:hover {
+    box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.342);
+}
+
+
+
+
+/* CARD 5 CERTIFICADO */
+#card_flu_certificado_5 {
+    position: fixed;
+    width: 90%;
+    height: 60vh;
+    right: 0;
+    margin-right: 5%;
+    margin-right: 5%;
+    box-shadow: 1px 1px 1rem black;
+    scale: 1.1;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#card_flu_certificado_5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* #card_flu_certificado_1 button */
+#card_flu_certificado_5 button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 10%;
+    margin-right: 1vw;
+    margin-top: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: 0.5s;
+
+}
+
+#card_flu_certificado_5 button:hover {
+    box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.342);
+}
+
+
+
+/* CARD FLU 6 CERTUFICADOS */
+#card_flu_certificado_6 {
+    position: fixed;
+    width: 90%;
+    height: 60vh;
+    right: 0;
+    margin-right: 5%;
+    margin-right: 5%;
+    box-shadow: 1px 1px 1rem black;
+    scale: 1.1;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#card_flu_certificado_3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* #card_flu_certificado_6 button */
+#card_flu_certificado_6 button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 10%;
+    margin-right: 1vw;
+    margin-top: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: 0.5s;
+
+}
+
+#card_flu_certificado_6 button:hover {
+    box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.342);
+}
+
+
+
+
+
+
+
+
+/* CARDS -2 */
+.cards_2 {
+    width: 100%;
+    height: 45%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.card {
+    border: 1px solid rgba(0, 0, 0, 0.227);
+    width: 30%;
+    height: 90%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bs-gray-300);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 1rem black;
+}
+
+
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.cards_2 button {
+    border: none;
+    transition: 0.5s;
+
+    border: 1px solid rgba(0, 0, 0, 0.295);
+    background-color: rgb(121, 51, 51);
+
+
+}
+
+.cards_2 button .bi {
+    color: white;
+    font-size: 1.4vw;
+}
+
+.cards_2 button:hover {
+    background-color: red;
+    color: white;
+}
+
+}
 
 
 /* ------------------MIDIAS SCREENS ---------------------------- */
