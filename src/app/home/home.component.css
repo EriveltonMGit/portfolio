@@ -729,15 +729,12 @@
     }
     
 }
-
-
-
 /* ------------------MIDIAS SCREENS CELULAR MODO HORIZONTAL 400px ---------------------------- */
 @media only screen and (max-height: 400px) and (orientation: landscape){
     /* NAV_BAR */
 #nav_bar {
     width: 90%;
-    height: 12%;
+    height: 15vh;
     top: 3vh;
     position: fixed;
     margin-left: 5%;
@@ -920,11 +917,6 @@
 }
 
 }
-
-
-
-
-
 
 /* ________________MIDIA SCREN 32480PX___________________ */
 @media screen and (max-width:480px) {
@@ -1258,8 +1250,6 @@
 }
 
 }
-
-
 
 /* ________________MIDIA SCREN 320PX___________________ */
 @media screen and (max-width:320px) {
