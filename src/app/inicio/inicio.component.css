@@ -3550,7 +3550,7 @@
         box-shadow: none;
         background-color: inherit;
         z-index: 10;
-        display: none;
+        /* display: none; */
 
     }
 
@@ -3674,7 +3674,7 @@
 
     /* IMG DO PERFIL */
     .img_perfil img {
-        width: 13vw;
+        width: 10vw;
         object-fit: cover;
         background-repeat: no-repeat;
         background-size: cover;
