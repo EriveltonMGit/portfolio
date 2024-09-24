@@ -380,8 +380,9 @@
     }
     
 }
-/* MIDIA PARA TABLETS 550 - 1024*/
-@media screen and (min-width: 550px) and (max-width:1024px){
+
+  /* Estilos para tablets em modo retrato */
+  @media (min-width: 600px) and (max-width: 1024px) and (orientation: portrait){
 /* NAV_BAR */
 #nav_bar {
     width: 90%;
@@ -709,8 +710,9 @@ background-color: var(--bs-gray-500);
 #menu ul li a:hover .bi{
 color: #000;
 }
-
 }
+
+
 /* ------------------MIDIAS SCREENS CELULAR MODO HORIZONTAL 400px ---------------------------- */
 @media only screen and (max-height:400px) and (orientation: landscape){
    
