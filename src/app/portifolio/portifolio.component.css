@@ -84,7 +84,7 @@
 }
 
 .img_perfil img {
-    width: 11vw;
+    width: 12vw;
     object-fit: cover;
     background-repeat: no-repeat;
     background-size: cover;
@@ -816,16 +816,6 @@
 
 }
 
-
-
-
-
-
-
-
-
-
-
 /* ------------------MIDIAS SCREENS 800px ---------------------------- */
 @media screen and (max-width:800px) {
     /* PORIFOLIO  */
@@ -1025,10 +1015,7 @@
     }
     
     
-    }
-    
-
-
+    }  
 /* ------------------MIDIAS SCREENS CELULAR MODO HORIZONTAL 480px ---------------------------- */
 @media only screen and (max-height: 400px) and (orientation: landscape){
 
@@ -1050,6 +1037,7 @@
     box-shadow: none;
     background-color: inherit;
     display: none;
+    
 }
 
 
@@ -1117,7 +1105,7 @@
 }
 
 .img_perfil img {
-    width: 10vw;
+    width: 14vw;
     object-fit: cover;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1432,10 +1420,6 @@
 
 
 }
-
-
-
-
 /* ------------------MIDIAS SCREENS ---------------------------- */
 @media screen and (max-width:480px) {
 /* PORIFOLIO  */
@@ -1636,10 +1620,7 @@
 
 
 }
-
-
 /* ------------------MIDIAS SCREENS 320psx ---------------------------- */
-
 @media screen and (max-width:320px) {
     /* PORIFOLIO  */
     

@@ -262,7 +262,7 @@ particlesJS('particles-js',
       },
       "line_linked": {
         "enable": true,
-        "distance": 150,
+        "distance": 100,//esse valor altera o tamanho das moleculas 150
         "color": "#ffffff",
         "opacity": 0.4,
         "width": 1
@@ -278,7 +278,7 @@ particlesJS('particles-js',
         "attract": {
           "enable": false,
           "rotateX": 600,
-          "rotateY": 1200
+          "rotateY": 900//1500
         }
       }
     },

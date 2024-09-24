@@ -359,361 +359,17 @@
     rotate: 0deg;
 }
 
-}
-
-
-
-
-
-/* ________________MIDIA SCREN 800PX___________________ */
-@media screen and (max-width:800px) {
-
-    /* NAV_BAR */
-    #nav_bar {
-        width: 90%;
-        height: 10vh;
-        top: 2vh;
-        position: fixed;
-        margin-left: 5%;
-        margin-right: 5%;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        border-radius: 10px;
-        backdrop-filter: blur(10px);
-        box-shadow: 1px 1px 0.5rem rgba(0, 0, 0, 0.226);
-        border: 1px solid rgba(255, 255, 255, 0.384);
-        z-index: 100;
-        padding: 0.5rem;
-
-    }
-
-
-    /* LOGO */
-    #logo {
-        width: 50%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 10px 0px 0px 10px;
-        position: absolute;
-        left: 0;
-
-
-    }
-
-    #logo div {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        border-radius: 10px 0px 0px 10px;
-
-    }
-
-    #logo div h5 {
-        font-family: Sora;
-        color: var(--bs-info);
-        font-size: 5vw;
-        margin-bottom: 0;
-    }
-
-    #logo .bi {
-        font-size: 5vw;
-
-    }
-
-    /* NAV UL */
-    #ul_nav {
-        width: 60%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        margin-bottom: 0px;
-        padding: 0.5rem;
-        display: none;
-    }
-
-    #ul_nav li {
-        width: 16%;
-        height: 90%;
-        gap: 1vw;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        border-radius: 5px;
-    }
-
-    #ul_nav li a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5vw;
-        width: 100%;
-        height: 100%;
-        color: var(--bs-gray-600);
-        transition: 0.5s;
-        border-radius: 5px;
-        font-family: VariableFont_wght;
-        font-size: 1vw;
-        font-weight: 600;
-    }
-
-    #ul_nav li a:hover {
-        background-color: var(--bs-gray-600);
-        color: white;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /* VAMOS CONVERSAR */
-    #vamos_conversar {
-        width: 50%;
-        height: 100%;
-        position: absolute;
-        right: 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        border-radius: 0px 10px 10px 0px;
-        padding: 0.5rem;
-
-    }
-
-    /* #vamos_conversar BUTTON 1 */
-    #vamos_conversar button:nth-child(1) {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1vw;
-        width: 30%;
-        height: 100%;
-        background-color: inherit;
-        border: none;
-        transition: 0.5s;
-        border-radius: 5px;
-        font-family: VariableFont_wght;
-        font-size: 6vw;
-        font-weight: 600;
-    }
-
-    #vamos_conversar button:nth-child(1):hover {
-        background-color: var(--bs-gray-200);
-    }
-
-    /* #vamos_conversar BUTTON  2*/
-    #vamos_conversar button:nth-child(2) {
-        
-        display: none;
-    }
-
-    #vamos_conversar button:nth-child(2):hover {
-        background-color: var(--bs-info);
-
-    }
-
-    #vamos_conversar button:nth-child(2) .bi {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        rotate: 180deg;
-        transition: 0.5s;
-    }
-
-    #vamos_conversar button:nth-child(2):hover .bi {
-        rotate: 0deg;
-    }
-
-
-    /* #vamos_conversar BUTTON  2*/
-    #vamos_conversar button:nth-child(3) {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-direction: column;
-        width: 30%;
-        height: 100%;
-        background-color: inherit;
-        border: none;
-        color: white;
-        transition: 0.5s;
-        border-radius: 5px;
-        font-family: VariableFont_wght;
-        font-size: 2vw;
-        font-weight: 600;
-    }
-
-    
-
-  
-
-   
-
-    #linha_1,
-    #linha_2,
-    #linha_3 {
-        width:80%;
-        height: 1vw;
-        background-color: var(--bs-gray-500);
-        border-radius: 2px;
-    }
-
-    .cross #linha_1 {
-        transform: rotate(43deg) translate(0.5vw, 0.5vw);
-        margin-top: 2vh;
-
-    }
-
-    .cross #linha_2 {
-        opacity: 0;
-    }
-
-    .cross #linha_3 {
-        transform: rotate(-43deg) translate(0.5vw, -0.5vw);
-        margin-bottom: 2vh;
-    }
-
-
-
-
-
-/* menu device */
-#menu {
-    position: fixed;
-    width: 60vw;
-    margin-left: -5vw;
-    height: 110vh;
-    left: -100%; 
-    top: -10vh;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    overflow-y: auto;
-    transition: left 0.3s ease-out; /* Transição suave para a esquerda */
-    z-index: 100;
-    margin-top: 8vh;
-    box-shadow: 1px 1px 1rem black;
-    background-color: var(--bs-gray-200);
-}
-
-#menu.show {
-    left: 0; /* Quando o menu for ativado, ele se move para a posição 0 */
-}
-
-
-
-/* menu_device_ul */
-#menu_device_ul{
-    width: 50%;
-    height: 70vh;
-   
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-
-
-
-/* text_menu_device */
-.text_menu_device{
-    width: 100%;
-    height: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    margin-top: 2vh;
-    gap: 3vw;
-}
-
-.text_menu_device h5{
-    margin-bottom: 0;
-    font-family: Sora;
-    font-size: 5vw;
-}
-.text_menu_device .bi-grid-1x2-fill{
-    font-size: 5vw;
-}
-
-#menu ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: absolute;
-    top: 15vh;
-    width: 100%;
-    height: 40%;
-    padding: 0;
-    padding: 1rem;
-}
-
-#menu ul li {
-    width: 100%;
-    height: 90%;
-    padding: 0.3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#menu ul li a {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 2vw;
-    text-decoration: none;
-    padding: 0.5rem;
-    font-size: 4vw;
-    transition: 0.3s;
-    border-radius: 5px;
-    color: var(--bs-gray-600);
-}
-
-#menu ul li a:hover{
-    background-color: var(--bs-gray-500);
-}
-     
-#menu ul li a:hover .bi{
-  color: #000;
-}
 
 }
-
-
-
-
-
-
 
 /* some como btn menu quando a tela chega a 1400px */
 @media screen and (max-width:1900px) {
-    /* #vamos_conversar button:nth-child(3) {
+    #vamos_conversar button:nth-child(3) {
         display: none;
     }
     #menu{
         display: none; 
-    } */
+    }
 }
 @media screen and (min-width:1000px) {
     #vamos_conversar button:nth-child(3) {
@@ -722,19 +378,16 @@
     #menu{
         display: none; 
     }
-}
-@media screen and (min-width:801px){
-    #menu{
-        display: none; 
-    }
     
 }
+
 /* ------------------MIDIAS SCREENS CELULAR MODO HORIZONTAL 400px ---------------------------- */
-@media only screen and (max-height: 400px) and (orientation: landscape){
+@media only screen and (max-height:400px) and (orientation: landscape){
+   
     /* NAV_BAR */
 #nav_bar {
     width: 90%;
-    height: 15vh;
+    height: 13vh;
     top: 3vh;
     position: fixed;
     margin-left: 5%;
@@ -911,8 +564,8 @@
     rotate: 0deg;
 }
 
-/* btn_menu-device" */
-.btn_menu-device{
+  /* menu devic */
+  #menu{
     display: none;
 }
 
