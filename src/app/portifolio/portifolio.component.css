@@ -311,7 +311,7 @@
     bottom: 0;
     padding: 1rem;
     border-radius: 10px;
-    margin-bottom: -5vh;
+    margin-bottom: -10vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -336,8 +336,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: Sora;
-    font-size: 2vw;
+    font-family: VariableFont_wght;
+    font-size: 1.8vw;
     color: var(--bs-dark);
     border-radius: 10px;
 }
@@ -369,8 +369,8 @@
     padding-left: 100%;
     white-space: nowrap;
     animation: rolarTexto 60s linear infinite;
-    font-family: Sora;
-    font-size: 2vw;
+    font-family: VariableFont_wght;
+    font-size: 1.3vw;
     z-index: 3;
     transition: animation 0.5s ease;
     color: var(--bs-dark);

@@ -1193,6 +1193,7 @@
     background-color: inherit;
     z-index: 10;
     /* display: none; */
+    
 
 }
 
@@ -1316,7 +1317,7 @@
 
 /* IMG DO PERFIL */
 .img_perfil img {
-    width: 12vw;
+    width: 13vw;
     object-fit: cover;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2371,6 +2372,7 @@
     background-color: inherit;
     z-index: 10;
     /* display: none; */
+    
 
 }
 
@@ -3674,7 +3676,7 @@
 
     /* IMG DO PERFIL */
     .img_perfil img {
-        width: 10vw;
+        width: 11vw;
         object-fit: cover;
         background-repeat: no-repeat;
         background-size: cover;
@@ -4711,6 +4713,8 @@
         justify-content: space-around;
         flex-direction: column;
         /* display: none; */
+       
+        
     }
 
     #particles-js {

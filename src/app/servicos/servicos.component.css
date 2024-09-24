@@ -285,8 +285,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: Sora;
-    font-size: 2vw;
+    font-family: VariableFont_wght;
+    font-size: 1.8vw;
+    font-weight: bolder;
     border-radius: 10px;
     color: var(--bs-dark);
     
@@ -317,8 +318,9 @@
     align-items: center;
     justify-content: flex-start;
     font-family: VariableFont_wght;
-    font-size: 1.2vw;
+    font-size: 1.4vw;
     color: var(--bs-dark);
+    
 }
 
 .bi-gear-fill{
@@ -374,6 +376,7 @@
 }
 .card_servico div p{
     font-size: 1.2vw;
+   
 }
 
 
