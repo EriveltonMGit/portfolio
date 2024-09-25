@@ -255,6 +255,7 @@
     backdrop-filter: blur(10px);
     border: 1px solid rgba(0, 0, 0, 0.185);
     box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.26);
+   
 }
 
 
@@ -282,6 +283,7 @@
 
 .titulo_contato h3 .bi {
     margin-right: 2vw;
+    
 }
 
 /*  text_contato (p) */
@@ -302,8 +304,11 @@
     font-family: VariableFont_wght;
     font-size: 1.4vw;
 }
-
-
+/* icon do whatsapp */
+.text_contato .bi-whatsapp{
+background-color: var( --bs-success-text-emphasis);
+color: white;
+}
 
 
 
@@ -360,7 +365,7 @@
 
 /* img discrod efeito */
 #discord_img {
-    width: 25vw;
+    width: 20vw;
     position: absolute;
     right: 0;
     margin-right: -10vw;
@@ -368,6 +373,10 @@
     animation: slide_img-discord 15s infinite;
     
 
+}
+/* img_android_cab */
+.img_android_cab{
+    display: none;
 }
 
 @keyframes slide_img-discord {
@@ -428,6 +437,7 @@
 /* .form_contato .container_inputs inputs */
 #telefone {
     width: 80%;
+  
 }
 
 .form_contato div {
@@ -461,14 +471,40 @@
 
 
 
+@media screen and (min-width: 1025px) and (max-width: 1280px) and (orientation: landscape){
+    .img_android_cab{
+        width: 10vw;
+        position: absolute;
+        right: 0;
+        margin-right: 5vw;
+        margin-bottom: -30vh;
+        animation: slide_img-discord 15s infinite;
+        display: none;
+    }
+    @keyframes slide_img-discord {
+        0% {
+            transform: translateY(0);
+        }
+    
+        50% {
+            transform: translateY(25px);
+            rotate: 10deg;
+        }
+    
+        100% {
+            transform: translateY(0);
+        }
+    }
+    
+       
+}
 
 
 
 
-/* ________________MIDIA SCREN 1000px 1300pxPX___________________ */
-
-@media all and (min-width: 801px) and (max-width: 1200px){
-    /* CONTATO */
+/* Estilos para tablets em modo retrato */
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait){
+  /* CONTATO */
 #contatos {
     width: 90%;
     height: 220vh;
@@ -481,6 +517,297 @@
     background-color: inherit;
     z-index: 10;
     border: 1px solid rgba(255, 0, 0, 0);
+    margin-bottom: 30vh;
+    display: none;
+
+    
+}
+
+
+
+/* perfil_flutuante */
+.perfil_flutuante {
+   
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONTEÚDO DO CONTATO */
+#content_contato {
+    width: 90vw;
+    height: 100%;
+    position: absolute;
+    top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 10px;  
+}
+
+
+/* titulo_contato */
+.titulo_contato {
+    width: 90vw;
+    height: 10%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.titulo_contato h3 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    font-family: Sora;
+    font-size: 8vw;
+    color: var(--bs-gray-800);
+}
+
+.titulo_contato h3 .bi {
+    margin-right: 2vw;
+}
+
+/*  text_contato (p) */
+.text_contato {
+    width: 90vw;
+    padding: 1rem;
+    height: 50%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.text_contato p {
+    color: var(--bs-dark);
+    font-family: VariableFont_wght;
+    font-size: 4.5vw;
+}
+/* ;DIV DOS ICONS */
+.icons_perfil div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 5;
+}
+.icons_perfil div .bi{
+   font-size:9vw;
+}
+
+
+
+/* DIV TEXTO ANIMADO */
+.div_texto_animado_port {
+    height: 15vh;
+    width: 100%;
+    margin-top: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    border-radius: 0px 0px 10px 10px;
+
+}
+
+/* TEXTO ANIMADO MSG */
+.div_texto_animado_port #msg_texto {
+    display: inline-block;
+    padding-left: 100%;
+    color: var(--bs-dark);
+    white-space: nowrap;
+    animation: rolarTexto 60s linear infinite;
+    font-family: Sora;
+    font-size: 8vw;
+    z-index: 3;
+    transition: animation 0.5s ease;
+}
+
+@keyframes rolarTexto {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+/* Estilo adicional para o emoji e o texto */
+.emoji {
+    margin-left: 5vw;
+}
+
+
+
+
+
+
+
+/* img discrod efeito */
+#discord_img {
+    width: 50vw;
+    position: absolute;
+    right: 0;
+    margin-right: 5vw;
+    margin-bottom: -30vh;
+    animation: slide_img-discord 15s infinite;
+    display: none;
+   
+}
+.img_android_cab{
+    width: 40vw;
+    position: absolute;
+    right: 0;
+    margin-right: 5vw;
+    animation: slide_img-android 15s infinite;
+    margin-bottom: -10vh;
+}
+@keyframes slide_img-android {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-70%);
+
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* form_contato */
+.form_contato {
+    width: 90vw;
+    height: 50%;
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 10px;
+    z-index: 2;
+    
+
+
+}
+
+/* .form_contato .container_inputs */
+.form_contato .container_inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    gap: 5vw;
+    font-size: 3vw;
+    
+
+
+}
+.form_contato .container_inputs div input{
+    font-size: 3vw;
+}
+
+#email_input{
+    font-size: 3vw; 
+}
+#email_input input{
+    font-size: 3vw; 
+}
+.text_area_contato{
+    font-size: 3vw;
+}
+
+/* .form_contato .container_inputs inputs */
+#telefone {
+    width: 80%;
+}
+
+.form_contato div {
+    width: 100%;
+}
+
+
+/* text_area_contato */
+.text_area_contato {
+    width: 100%;
+    height: 40%;
+}
+
+.form_contato button {
+    width: 70%;
+    padding: 1rem;
+    border: none;
+    background-color: var(--bs-info);
+    border-radius: 10px;
+    font-family: Sora;
+    font-size: 5vw;
+    color: var(--bs-white);
+    transition: 0.5s;
+}
+
+.form_contato button:hover {
+    box-shadow: 1px 1px 1rem black;
+    color: var(--bs-gray-300);
+}
+}
+/* Estilos para tablets em modo paisagem */
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape){
+    /* CONTATO */
+#contatos {
+    width: 80.1%;
+    height: 220vh;
+    margin-right: 10%;
+    margin-left: 10%;
+    border-radius: 10px;
+    position: relative;
+    border: none;
+    box-shadow: none;
+    background-color: inherit;
+    z-index: 10;
+    border: 1px solid rgba(255, 0, 0, 0);
+    margin-bottom: 30vh;
     display: none;
 }
 
@@ -488,7 +815,7 @@
 
 /* perfil_flutuante */
 .perfil_flutuante {
-    width: 28vw;
+    width: 25vw;
     height: 100%;
     top: 20vh;
     position: absolute;
@@ -503,7 +830,7 @@
 
 /* seviços */
 #contatos #contato_perfil {
-    width: 28vw;
+    width: 25vw;
     height: 85vh;
     top: 20vh;
     margin-top: -300vh;
@@ -550,7 +877,7 @@
 }
 
 .img_perfil img {
-    width: 13vw;
+    width: 11vw;
     object-fit: cover;
     background-repeat: no-repeat;
     background-size: cover;
@@ -576,7 +903,7 @@
 /* NOME DO CARD FLUTUANTE SERVIÇOS */
 .text_perfil h3 {
     font-family: Sora;
-    font-size: 2vw;
+    font-size: 1.6vw;
     color: var(--bs-gray-800);
 }
 
@@ -584,7 +911,7 @@
 .text_perfil p {
     color: var(--bs-dark);
     font-family: VariableFont_wght;
-    font-size: 1.4vw;
+    font-size: 1vw;
 }
 
 /*  */
@@ -678,7 +1005,7 @@
 
 .icons_perfil div .bi {
     border: 1px solid var(--bs-gray-300);
-    font-size: 2.5vw;
+    font-size: 2vw;
     border-radius: 5px;
     padding: 0.3rem;
     display: flex;
@@ -724,6 +1051,7 @@
     backdrop-filter: blur(10px);
     border: 1px solid rgba(0, 0, 0, 0.185);
     box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.26);
+   
 }
 
 
@@ -745,12 +1073,13 @@
     align-items: center;
     justify-content: space-between;
     font-family: Sora;
-    font-size: 3vw;
+    font-size: 2vw;
     color: var(--bs-gray-800);
 }
 
 .titulo_contato h3 .bi {
-    margin-right: 2.5vw;
+    margin-right: 2vw;
+    
 }
 
 /*  text_contato (p) */
@@ -769,10 +1098,13 @@
 .text_contato p {
     color: var(--bs-dark);
     font-family: VariableFont_wght;
-    font-size: 1.6vw;
+    font-size: 1.4vw;
 }
-
-
+/* icon do whatsapp */
+.text_contato .bi-whatsapp{
+background-color: var( --bs-success-text-emphasis);
+color: white;
+}
 
 
 
@@ -829,14 +1161,18 @@
 
 /* img discrod efeito */
 #discord_img {
-    width: 40vw;
+    width: 20vw;
     position: absolute;
     right: 0;
-    margin-right: 2vw;
-    margin-bottom: -15vh;
+    margin-right: -10vw;
+    margin-bottom: -5vh;
     animation: slide_img-discord 15s infinite;
     
 
+}
+/* img_android_cab */
+.img_android_cab{
+    display: none;
 }
 
 @keyframes slide_img-discord {
@@ -897,6 +1233,7 @@
 /* .form_contato .container_inputs inputs */
 #telefone {
     width: 80%;
+  
 }
 
 .form_contato div {
@@ -928,8 +1265,14 @@
 }
 
 }
-   /* Estilos para tablets em modo retrato */
-@media (min-width: 600px) and (max-width: 1024px) and (orientation: portrait){
+
+
+
+
+
+
+/* Estilos para tablets em modo retrato */
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait){
 /* CONTATO */
 #contatos {
     width: 90%;
@@ -1105,9 +1448,16 @@
     margin-right: 5vw;
     margin-bottom: -30vh;
     animation: slide_img-discord 15s infinite;
-
+    display: none;
 }
-
+.img_android_cab{
+    width: 70vw;
+    position: absolute;
+    right: 0;
+    margin-right: 5vw;
+    margin-bottom: -30vh;
+    animation: slide_img-discord 15s infinite;
+}
 @keyframes slide_img-discord {
     0% {
         transform: translateY(0);
@@ -1195,9 +1545,8 @@
     color: var(--bs-gray-300);
 }
 }
-
-/* Estilos para tablets em modo paisagem TABLET */
-@media (min-width: 600px) and (max-width: 1024px) and (orientation: landscape){
+/* Estilos para celulares grandes em modo paisagem */
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
     /* CONTATO */
 #contatos {
     width: 80.1%;
@@ -1660,473 +2009,18 @@
 
 
 }
-/* ------------------MIDIAS SCREENS CELULAR MODO HORIZONTAL 400px ---------------------------- */
-@media only screen and (max-height: 400px) and (orientation: landscape){
-/* CONTATO */
-#contatos {
-    width: 90%;
-    height: 300vh;
-    margin-right: 5%;
-    margin-left: 5%;
-    border-radius: 10px;
-    position: relative;
-    border: none;
-    box-shadow: none;
-    background-color: inherit;
-    z-index: 10;
-    border: 1px solid rgba(255, 0, 0, 0);
-    display: none;
-}
 
 
 
-/* perfil_flutuante */
-.perfil_flutuante {
-    width: 28vw;
-    height: 93%;
-    top: 20vh;
-    position: absolute;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
 
 
-}
 
 
-/* seviços */
-#contatos #contato_perfil {
-    width: 28vw;
-    height: 90vh;
-    top: 20vh;
-    margin-top: -300vh;
-    position: sticky;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(0, 0, 0, 0.185);
-    box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.26);
-    z-index: 2;
-    padding: 1rem;
-}
 
 
-/* DESCRIÇÃO PERFIL */
-#contatos .perfil_descricao {
-    width: 100%;
-    height: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-    border-radius: 10px 10px 0px 0px;
-
-
-}
-
-/* img_perfil */
-.img_perfil {
-    width: 100%;
-    height: 60%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    border-radius: 10px;
-    position: relative;
-    box-shadow: inset 0px 20px 50px rgba(0, 0, 0, 0.671);
-    position: relative;
-
-
-}
-
-.img_perfil img {
-    width: 11vw;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    bottom: 0;
-    z-index: 3;
-
-}
-
-/* text_perfil */
-.text_perfil {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-    height: 45%;
-    border-bottom: 1px solid rgb(0, 0, 0);
-    overflow: hidden;
-    padding: 0.3rem;
-}
-
-/* NOME DO CARD FLUTUANTE SERVIÇOS */
-.text_perfil h3 {
-    font-family: Sora;
-    font-size: 1.1vw;
-    margin-top: 1vh;
-    color: var(--bs-gray-800);
-
-}
-
-/* TEXTO DO CARD FLUTUANTE (P) */
-.text_perfil p {
-    color: var(--bs-dark);
-    font-family: VariableFont_wght;
-    font-size: 1vw;
-}
-
-/*  */
-.text_perfil p .bi {
-    color: var(--bs-info);
-}
-
-/* PERFIL CONTATO */
-.perfil_contato {
-    width: 100%;
-    height: 20%;
-    border-radius: 0px 0px 10px 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-/* btn_perfil */
-.btn_perfil {
-    width: 100%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.btn_perfil button {
-    padding: 0.5rem;
-    border-radius: 5px;
-}
-
-.btn_perfil button:nth-child(1) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    gap: 1vw;
-    background-color: var(--bs-dark);
-    color: var(--bs-white);
-    transition: 0.5s;
-    font-family: VariableFont_wght;
-    font-size: 1vw;
-    transition: 0.5s;
-
-}
-
-.btn_perfil button:nth-child(1):hover {
-    background-color: var(--bs-info);
-}
-
-.btn_perfil button:nth-child(2) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    gap: 1vw;
-    color: var(--bs-dark);
-    transition: 0.5s;
-    font-family: VariableFont_wght;
-    font-size: 1vw;
-}
-
-.btn_perfil button:nth-child(2):hover {
-    background-color: var(--bs-success);
-    box-shadow: 1px 1px 1rem rgba(0, 255, 64, 0.678);
-    color: white;
-}
-
-
-
-
-
-/* ICONS PERFIL */
-.icons_perfil {
-    width: 100%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-.icons_perfil div {
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 1vw;
-}
-
-.icons_perfil div .bi {
-    border: 1px solid var(--bs-gray-300);
-    font-size: 1.4vw;
-    border-radius: 5px;
-    padding: 0.3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: 0.5s;
-
-}
-
-.icons_perfil div .bi:hover {
-    box-shadow: 1px 1px 1rem var(--bs-gray-800);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* CONTEÚDO DO CONTATO */
-#content_contato {
-    width: 66%;
-    height: 93%;
-    position: absolute;
-    top: 20vh;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-    right: 0;
-    padding: 2rem;
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(0, 0, 0, 0.185);
-    box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.26);
-}
-
-
-/* titulo_contato */
-.titulo_contato {
-    width: 100%;
-    height: 10%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 10px;
-}
-
-.titulo_contato h3 {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-family: Sora;
-    font-size: 2vw;
-    color: var(--bs-gray-800);
-}
-
-.titulo_contato h3 .bi {
-    margin-right: 2vw;
-}
-
-/*  text_contato (p) */
-.text_contato {
-    width: 100%;
-    height: 20%;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-
-}
-
-.text_contato p {
-    color: var(--bs-dark);
-    font-family: VariableFont_wght;
-    font-size: 1.4vw;
-}
-
-
-
-
-
-/* DIV TEXTO ANIMADO */
-.div_texto_animado_port {
-    height: 15vh;
-    width: 100%;
-    margin-top: 4vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    white-space: nowrap;
-    box-sizing: border-box;
-    border-radius: 0px 0px 10px 10px;
-
-}
-
-/* TEXTO ANIMADO MSG */
-.div_texto_animado_port #msg_texto {
-    display: inline-block;
-    padding-left: 100%;
-    color: var(--bs-dark);
-    white-space: nowrap;
-    animation: rolarTexto 60s linear infinite;
-    font-family: Sora;
-    font-size: 2vw;
-    z-index: 3;
-    transition: animation 0.5s ease;
-    cursor: pointer;
-}
-
-@keyframes rolarTexto {
-    0% {
-        transform: translateX(0%);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-
-/* Estilo adicional para o emoji e o texto */
-.emoji {
-    margin-left: 5vw;
-}
-
-
-
-
-
-
-
-/* img discrod efeito */
-#discord_img {
-    width: 25vw;
-    position: absolute;
-    right: 0;
-    margin-right: -10vw;
-    margin-bottom: -5vh;
-    animation: slide_img-discord 15s infinite;
-    
-
-}
-
-@keyframes slide_img-discord {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(25px);
-        rotate: 10deg;
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
-
-
-
-
-
-
-
-
-
-/* form_contato */
-.form_contato {
-    width: 100%;
-    height: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 1rem;
-    backdrop-filter: blur(10px);
-    box-shadow: 1px 1px 0.5rem rgba(0, 0, 0, 0.226);
-    border: 1px solid rgba(255, 255, 255, 0.384);
-    border-radius: 10px;
-    z-index: 2;
-    
-
-}
-
-/* .form_contato .container_inputs */
-.form_contato .container_inputs {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    gap: 5vw;
-    
-
-
-}
-
-/* .form_contato .container_inputs inputs */
-#telefone {
-    width: 80%;
-}
-
-.form_contato div {
-    width: 100%;
-}
-
-
-/* text_area_contato */
-.text_area_contato {
-    width: 100%;
-    height: 40%;
-}
-
-.form_contato button {
-    width: 50%;
-    padding: 1rem;
-    border: none;
-    background-color: var(--bs-info);
-    border-radius: 10px;
-    font-family: Sora;
-    font-size: 1.4vw;
-    color: var(--bs-white);
-    transition: 0.5s;
-}
-
-.form_contato button:hover {
-    box-shadow: 1px 1px 1rem black;
-    color: var(--bs-gray-300);
-}
-
-}
-/* ------------------MIDIAS SCREENS ---------------------------- */
-@media screen and (max-width:480px) {
+/* ________________MIDIA SCREN 32480PX___________________ */
+/* RETRATO */
+@media screen and (min-width: 321px) and (max-width: 480px) and (orientation: portrait)  {
 
 /* CONTATO */
 #contatos {
@@ -2303,6 +2197,7 @@
     margin-right: 5vw;
     margin-bottom: -30vh;
     animation: slide_img-discord 15s infinite;
+    display: none;
 
 }
 
@@ -2394,8 +2289,17 @@
 }
 
 }
+
+@media screen and (min-width: 321px) and (max-width: 480px) and (orientation: landscape){
+
+}
+
+
+
+
+
 /* ------------------MIDIAS SCREENS 320psx ---------------------------- */
-@media screen and (max-width:320px) {
+@media screen and (max-width: 320px) and (orientation: portrait) {
 
     /* CONTATO */
     #contatos {

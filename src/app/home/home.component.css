@@ -179,9 +179,10 @@
 
 
 /* Estilos para notebooks pequenos em modo retrato */
-@media screen and (min-width: 1025px) and (max-width: 1280px) and (orientation: portrait){
-      /* NAV_BAR */
-      #nav_bar {
+@media screen and (min-width: 1025px) and (max-width: 1280px) and (orientation: portrait) {
+
+    /* NAV_BAR */
+    #nav_bar {
         width: 90%;
         height: 8vh;
         top: 2vh;
@@ -509,7 +510,7 @@
 
     #menu ul li a:hover .bi {
         color: #000;
-    } 
+    }
 }
 
 
@@ -533,9 +534,10 @@
 
 
 /* Estilos para tablets em modo retrato */
-@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait){
-      /* NAV_BAR */
-      #nav_bar {
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
+
+    /* NAV_BAR */
+    #nav_bar {
         width: 90%;
         height: 8vh;
         top: 2vh;
@@ -866,9 +868,188 @@
     }
 }
 
+/* Estilos para tablets em modo paisagem */
 @media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
-    /* Estilos para tablets em modo paisagem */
-  }
+
+    /* NAV_BAR */
+    #nav_bar {
+        width: 80.1%;
+        height: 12%;
+        top: 1vh;
+        position: fixed;
+        margin-left: 10%;
+        margin-right: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        box-shadow: 1px 1px 0.5rem rgba(0, 0, 0, 0.226);
+        border: 1px solid rgba(255, 255, 255, 0.384);
+        z-index: 100;
+        padding: 0.5rem;
+
+
+    }
+
+
+    /* LOGO */
+    #logo {
+        width: 20%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px 0px 0px 10px;
+
+
+    }
+
+    #logo div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 10px 0px 0px 10px;
+
+    }
+
+    #logo div h5 {
+        font-family: Sora;
+        font-size: 1.6vw;
+        color: var(--bs-info);
+        font-size: 1.5vw;
+        margin-bottom: 0;
+    }
+
+    #logo .bi {
+        font-size: 2vw;
+
+    }
+
+    /* NAV UL */
+    #ul_nav {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 0px;
+        padding: 0.5rem;
+    }
+
+    #ul_nav li {
+        width: 16%;
+        height: 90%;
+        gap: 1vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 5px;
+    }
+
+    #ul_nav li a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5vw;
+        width: 100%;
+        height: 100%;
+        color: var(--bs-gray-600);
+        transition: 0.5s;
+        border-radius: 5px;
+        font-family: VariableFont_wght;
+        font-size: 1.2vw;
+        font-weight: 600;
+    }
+
+    #ul_nav li a:hover {
+        background-color: var(--bs-gray-600);
+        color: white;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* VAMOS CONVERSAR */
+    #vamos_conversar {
+        width: 20%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 0px 10px 10px 0px;
+        padding: 0.5rem;
+    }
+
+    /* #vamos_conversar BUTTON 1 */
+    #vamos_conversar button:nth-child(1) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5vw;
+        width: 20%;
+        height: 100%;
+        background-color: inherit;
+        border: none;
+        transition: 0.5s;
+        border-radius: 5px;
+        font-family: VariableFont_wght;
+        font-size: 1.4vw;
+        font-weight: 600;
+    }
+
+    #vamos_conversar button:nth-child(1):hover {
+        background-color: var(--bs-gray-200);
+    }
+
+    /* #vamos_conversar BUTTON  2*/
+    #vamos_conversar button:nth-child(2) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5vw;
+        width: 75%;
+        height: 100%;
+        background-color: inherit;
+        border: none;
+        color: rgb(0, 0, 0);
+        transition: 0.5s;
+        border-radius: 5px;
+        font-family: VariableFont_wght;
+        font-size: 1vw;
+        font-weight: 600;
+    }
+
+    #vamos_conversar button:nth-child(2):hover {
+        background-color: var(--bs-dark);
+        color: white;
+
+    }
+
+    #vamos_conversar button:nth-child(2) .bi {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        rotate: 180deg;
+        transition: 0.5s;
+        color: rgb(0, 0, 0);
+    }
+
+    #vamos_conversar button:nth-child(2):hover .bi {
+        rotate: 0deg;
+    }
+}
 
 
 
