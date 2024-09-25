@@ -1097,16 +1097,22 @@
 /* .ul_servicos li */
 .ul_servicos li {
     width: 100%;
-    height: 100%;
+    height: 5vh;
     list-style: none;
     margin-left: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1vw;
+    color: var(--bs-dark);
+    border-radius: 5px;
 
 }
-
+.ul_servicos li :hover {
+    background-color: var(--bs-gray-400);
+   
+ 
+}
 /* .ul_servicos li a */
 .ul_servicos li a {
     text-decoration: none;
@@ -1124,6 +1130,10 @@
 .ul_servicos li a:hover {
     background-color: var(--bs-gray-400);
 }
+.ul_servicos li:hover a{
+    color: #fc0045;
+}
+
 
 .ul_servicos li i {
     font-size: 1.2vw;
@@ -1170,13 +1180,20 @@
 /* .ul_contato li */
 .ul_contato li {
     width: 100%;
-    height: 100%;
+    height: 5vh;
     list-style: none;
     margin-left: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1vw;
+    color: var(--bs-dark);
+    border-radius: 5px;
+}
+.ul_contato li:hover {
+    background-color: var(--bs-gray-400);
+   
+ 
 }
 
 .ul_contato li a {
@@ -1192,10 +1209,10 @@
     color: var(--bs-dark);
 
 }
-
-.ul_contato li a:hover {
-    background-color: var(--bs-gray-400);
+.ul_contato li:hover a{
+    color: #fc0045;
 }
+
 
 .ul_contato li i {
     font-size: 1.2vw;
