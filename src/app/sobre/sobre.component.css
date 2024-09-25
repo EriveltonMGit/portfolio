@@ -537,8 +537,28 @@ svg {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    opacity: 0; /* Começa invisível */
+    transform: translateY(80%); /* Começa deslocado para baixo */
+    transition: opacity 1s ease, transform 1s ease; /* Transição suave */
 
 }
+.inte_text.visible {
+    opacity: 1; /* Tornam-se visíveis */
+    transform: translateY(0); /* Voltando para a posição original */
+  }
+
+
+
+/* Efeito */
+  .inte_desc_1{
+    opacity: 0; /* Começa invisível */
+    transform: translateY(30%); /* Começa deslocado para baixo */
+    transition: opacity 1.4s ease, transform 1.5s ease; /* Transição suave */
+  }
+  .inte_desc_1.visible {
+    opacity: 1; /* Tornam-se visíveis */
+    transform: translateY(0); /* Voltando para a posição original */
+  }
 
 /* inte_text p */
 .inte_desc_1 p {
@@ -547,10 +567,9 @@ svg {
     color: var(--bs-dark);
     height: 30%;
     width: 100%;
+    
 
 }
-
-
 
 
 
@@ -612,8 +631,17 @@ svg {
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-
+   opacity: 0; /* Começa invisível */
+    transform: translateY(30%); /* Começa deslocado para baixo */
+    transition: opacity 1.4s ease, transform 1.5s ease; /* Transição suave */
 }
+/* EFEITO */
+  .artigos_card.visible {
+    opacity: 1; /* Tornam-se visíveis */
+    transform: translateY(0); /* Voltando para a posição original */
+  }
+
+
 
 .artigos_card h3 {
     width: 100%;
@@ -648,7 +676,7 @@ svg {
     overflow: hidden;
     padding: 1rem;
     text-align: center;
-
+  
 
 }
 
@@ -672,9 +700,7 @@ svg {
     color: white;
 }
 
-.card {
-    background-color: red;
-}
+
 
 .cards_1 p {
     font-size: 1vw;
@@ -998,6 +1024,7 @@ svg {
     background-color: var(--bs-gray-300);
     cursor: pointer;
     transition: 0.5s;
+
 }
 
 .card:hover {

@@ -72,3 +72,42 @@ function fecharCard() {
     var card_flu_certificado_5 = document.getElementById(`card_flu_certificado_6`).style.display = 'nonw'
 }
 
+
+
+
+
+// ANIMAÇÃO SCROLL CARDS
+document.addEventListener("DOMContentLoaded", function() {
+    const cards = document.querySelectorAll('#animation_text'); // Seleciona todos os cards
+    const visibleCards = new Set(); // Conjunto para manter o controle dos cards visíveis
+    let lastScrollY = window.scrollY; // Armazena a última posição do scroll
+  
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible'); // Adiciona a classe quando o card está visível
+          visibleCards.add(entry.target); // Adiciona o card ao conjunto se estiver visível
+        } 
+      });
+    }, {
+      threshold: 0.1 // O card aparecerá quando 10% dele estiver na viewport
+    });
+  
+    cards.forEach(card => observer.observe(card)); // Começa a observar cada card
+  
+    window.addEventListener('scroll', () => {
+      const currentScrollY = window.scrollY;
+  
+      if (currentScrollY < lastScrollY) { // Se rolando para cima
+        visibleCards.forEach(card => {
+          const rect = card.getBoundingClientRect(); // Obtém as dimensões do card
+          if (rect.bottom < 0) { // Se o card saiu da viewport
+            card.classList.remove('visible'); // Remove a classe do card
+            visibleCards.delete(card); // Remove o card do conjunto
+          }
+        });
+      }
+  
+      lastScrollY = currentScrollY; // Atualiza a última posição do scroll
+    });
+  });
