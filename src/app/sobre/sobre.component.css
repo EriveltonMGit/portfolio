@@ -537,28 +537,12 @@ svg {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    opacity: 0; /* Começa invisível */
-    transform: translateY(80%); /* Começa deslocado para baixo */
-    transition: opacity 1s ease, transform 1s ease; /* Transição suave */
 
 }
-.inte_text.visible {
-    opacity: 1; /* Tornam-se visíveis */
-    transform: translateY(0); /* Voltando para a posição original */
-  }
 
 
 
-/* Efeito */
-  .inte_desc_1{
-    opacity: 0; /* Começa invisível */
-    transform: translateY(30%); /* Começa deslocado para baixo */
-    transition: opacity 1.4s ease, transform 1.5s ease; /* Transição suave */
-  }
-  .inte_desc_1.visible {
-    opacity: 1; /* Tornam-se visíveis */
-    transform: translateY(0); /* Voltando para a posição original */
-  }
+
 
 /* inte_text p */
 .inte_desc_1 p {
@@ -597,7 +581,6 @@ svg {
 .descricao a:hover {
     box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.322);
     color: var(--bs-red);
-    border: 1px solid red;
 }
 
 
@@ -631,15 +614,8 @@ svg {
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-   opacity: 0; /* Começa invisível */
-    transform: translateY(30%); /* Começa deslocado para baixo */
-    transition: opacity 1.4s ease, transform 1.5s ease; /* Transição suave */
 }
-/* EFEITO */
-  .artigos_card.visible {
-    opacity: 1; /* Tornam-se visíveis */
-    transform: translateY(0); /* Voltando para a posição original */
-  }
+
 
 
 

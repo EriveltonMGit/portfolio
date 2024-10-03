@@ -13,7 +13,18 @@
     /* display: none; */
 
 }
-
+.hidden{
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 1s;
+    transform: translateX(-100%);
+}
+.show{
+    opacity: 1;
+    filter: blur(0px);
+    transition: all 1s;
+    transform: translateX(0);
+}
 #particles-js {
     position: absolute;
     width: 100%;
@@ -135,6 +146,7 @@
 /* IMG DO PERFIL */
 .img_perfil img {
     width: 12vw;
+  
     object-fit: cover;
     background-repeat: no-repeat;
     background-size: cover;

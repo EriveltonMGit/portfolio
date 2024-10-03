@@ -11,6 +11,7 @@ function home() {
   let contato = document.getElementById(`contatos`)
   let nav_bar = document.getElementById(`nav_bar`)
 
+
   // FUNÇÃO PARA DEIXAR O BOTÃO QUE FOI CLICADO MARCADO
   let home = document.getElementById(`btn_home`)
   let btn_sobre = document.getElementById(`btn_sobre`)
@@ -213,6 +214,22 @@ function site() {
     return
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
