@@ -5,7 +5,7 @@
 
 Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) version 17.3.4.
 
-&nbsp;<a href="https://portifolio-dv.netlify.app/">
+&nbsp;<a href="https://portfoolio-dv.netlify.app/">
 Link para o projeto 
 </a>&nbsp;
 
